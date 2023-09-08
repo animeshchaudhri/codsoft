@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+  .btn {
+    @apply bg-gray-500 text-white p-4 rounded shadow;
+  }
+
+  .operator {
+    @apply bg-blue-500;
+  } 
+}
+  </style>
+  <title>Calculator</title>
+</head>
+<body>
+   <div class=" flex min-h-screen flex-col justify-center bg-gradient-to-r from-blue-200 to-cyan-200">
+  <div class="flex flex-col items-center px-4">
+
+    <div id="display" class="text-right bg-gray-200 p-4  w-56 m-2 text-2xl"></div>
+
+    <div class="grid grid-cols-4 gap-4">
+      <button id="clear" class="btn">C</button>
+      <button id="divide" class="btn operator">/</button>
+      <button id="multiply" class="btn operator">*</button>
+      <button id="subtract" class="btn operator">-</button>
+      <button id="add" class="btn operator">+</button>
+      
+      <button id="seven" class="btn number">7</button>
+      <button id="eight" class="btn number">8</button>
+      <button id="nine" class="btn number">9</button>
+
+      <button id="four" class="btn number">4</button>
+      <button id="five" class="btn number">5</button>
+      <button id="six" class="btn number">6</button>
+
+      <button id="one" class="btn number">1</button>
+      <button id="two" class="btn number">2</button>
+      <button id="three" class="btn number">3</button>
+
+      <button id="zero" class="btn number">0</button>
+      <button id="decimal" class="btn">.</button>
+      <button id="equals" class="btn">=</button>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
